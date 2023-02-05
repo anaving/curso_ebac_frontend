@@ -1,32 +1,30 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Integrando HTML / JavaScript</title>
-    <link rel="stylesheet" href="./main.css">
+    <title>Exercicio jQuery</title>
+    <link rel="stylesheet" href="/main.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
 </head>
+<body>
+    <header>
+        <h1>Lista de tarefas</h1>
+    </header>
 
-
-    <body>
-        <div class="container">
-            <h1>Formulário de validação</h1>
-            <h2>Valores</h2>
-            <form id="form-validacao">
-            <label for="numero-a">Valor A:</label><input  type="number" id="numero-a" required placeholder="Valor menor que B" />
-            <p>
-
-            </p>
-            <label for="numero-b">Valor B:</label><input  type="number" id="numero-b" required placeholder="Valor maior que A" />
-            <button id="btn-depositar" type="submit">Validar</button>
-            </form>
-            <p class="sucess-messege"></p>
-            <p class="error-messege"></p>
-        </div>
+    <form> 
+        <input type="text" id="nova-tarefa" required placeholder="Nome da tarefa" />
+        <button type="submit">Cadastrar</button>
+    </form>
+    <div class="lista-tarefas">
+        <ul></ul>
+    </div>
         
 
-        <script src="./main.js"></script>
-
-    </body>
+    <script src="https://code.jquery.com/jquery-3.6.3.min.js"></script>
+    <script src="/main.js"></script>
+</body>
 </html>
